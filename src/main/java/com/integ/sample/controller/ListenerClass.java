@@ -24,5 +24,9 @@ public class ListenerClass {
 	public String authenticate(@RequestBody Authentication auth){
 		return auth.getChallenge();
 	}*/
+	@RequestMapping("/")
+	public String home(){
+		return "home page";
+	}
 }
 
