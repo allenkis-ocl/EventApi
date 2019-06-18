@@ -14,10 +14,14 @@ import com.vo.Message;
 public class ListenerClass {
 
 	@RequestMapping(method=RequestMethod.POST,value="/messages")
-	public void listenMessage(@RequestBody Message msg){
+	public String listenMessage(@RequestBody Message msg){
 		
-		if(msg.getType().equalsIgnoreCase(""))
-		System.out.println("Request received");
+		if("url_verification".equalsIgnoreCase(msg.getType()))
+			return msg.getChallenge();
+		else{
+			
+		}
+			return "success";
 	}
 	
 	/*@RequestMapping(method=RequestMethod.POST,value="/auth")
