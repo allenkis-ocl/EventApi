@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.controller;
+package com.integ.sample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
