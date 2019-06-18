@@ -7,7 +7,25 @@ public class Message {
 	private String user;
 	private String text;
 	private String ts;
+	private String token;
+	private String challenge;
 	
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+	public String getChallenge() {
+		return challenge;
+	}
+
+	public void setChallenge(String challenge) {
+		this.challenge = challenge;
+	}
+
 	Message(){}
 
 	public String getType() {
