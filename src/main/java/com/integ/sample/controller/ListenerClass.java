@@ -19,9 +19,9 @@ public class ListenerClass {
 		if("url_verification".equalsIgnoreCase(msg.getType()))
 			return msg.getChallenge();
 		else{
-			
+			return msg.getText();
 		}
-			return "success";
+			
 	}
 	
 	/*@RequestMapping(method=RequestMethod.POST,value="/auth")
